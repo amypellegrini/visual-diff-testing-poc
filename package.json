@@ -1,0 +1,39 @@
+{
+  "name": "visual-diff-testing-poc",
+  "version": "1.0.0",
+  "description": "Visual Diff Testing POC",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch --config config/unit-tests/jest.config.js",
+    "integration-test": "jest --watch --config config/integration-tests/jest.config.js",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": "git+https://github.com/amypellegrini/visual-diff-testing-poc.git",
+  "keywords": [],
+  "author": "Amy Pellegrini <amy@digital-detox.co.uk>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amypellegrini/visual-diff-testing-poc/issues"
+  },
+  "homepage": "https://github.com/amypellegrini/visual-diff-testing-poc#readme",
+  "dependencies": {
+    "next": "^7.0.1",
+    "pixelmatch": "^4.0.2",
+    "puppeteer": "^1.8.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "devDependencies": {
+    "babel-jest": "^23.6.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "jest": "^23.6.0",
+    "jest-puppeteer": "^3.4.0",
+    "react-test-renderer": "^16.5.2",
+    "react-testing-library": "^5.1.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  }
+}
