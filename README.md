@@ -10,12 +10,13 @@ We want both developers and testers to be free to focus on app architecture, aut
 
 ## Automated visual diff testing
 
-Automated visual diff testing is a response to this problem, and in this POC we will explore a potential working solution to enable automated visual diff testing to be added to an hypothetical CI pipeline.
+Automated visual diff testing is a response to this problem, and in this POC we will explore a potential working solution to enable automated visual diff testing to be added to an hypothetical CI pipeline by extending the Jest workflow.
 
 ## Goals
 
-- Enable low-cost (easy to implement, easy to run) automated visual diff testing by extending the Jest suite
+- Enable low-cost (easy to implement, easy to run) automated visual diff testing workflow by extending the Jest suite
 - Provide an architecture example with typical concerns addressed (testing workflow, file storage, configuration, etc)
+- Develop potential workarounds for trade-offs introduced by automated vs manual testing
 - Provide developers with useful documentation on how to perform automated visual diff testing
 
 ## Tools/Dependencies
@@ -40,13 +41,15 @@ The more code coverage is provided through tests, the more screenshots of differ
 
 ## Limitations
 
-### Limited browser support
+### Browser support
 
-To facilitate a fast development experience, this solution relies on **Puppeteer** as the default headless browser solution. From the docs: _"Puppeteer is a Node library which provides a high-level API to control Chrome or Chromium over the DevTools Protocol."_. This means that at the present moment only Chrome browser is supported.
+To facilitate a fast development experience, this solution relies on **Puppeteer** as the default headless browser solution, so at the present moment only Chrome browser is supported.
 
 ### Screenshots are static
 
 Since screenshots are static representations of the application at specific moments in time, to recreate different states of the application programmatically can be challenging sometimes, and visual testing will not be possible if the content displayed by the page is dynamic in any way (e.g. animations, dynamic data, etc).
+
+A workaround for this problem could be page clipping.
 
 ### Not a silver bullet
 
