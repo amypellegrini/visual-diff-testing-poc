@@ -20,10 +20,6 @@ describe("Index/home route", () => {
     });
   });
 
-  it('should display "Hello world!" text on page', async () => {
-    await expect(page).toMatch("Hello World!");
-  });
-
   it("should match previous screenshot", () => {
     const actualScreenshot = fs.readFileSync(actualScreenshotPath);
     const expectedScreenshot = fs.readFileSync(expectedScreenshotPath);
@@ -35,6 +31,11 @@ describe("Index/home route", () => {
       800,
       600
     );
+
     expect(mismatchPixelCount).toEqual(0);
+  });
+
+  afterAll(() => {
+    fs.unlinkSync(actualScreenshotPath);
   });
 });
