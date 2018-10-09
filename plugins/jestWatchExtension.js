@@ -4,6 +4,7 @@ class ScreenshotDiffJestExtension {
   apply(jestHooks) {
     jestHooks.onTestRunComplete(this.onTestRunComplete.bind(this));
     jestHooks.shouldRunTestSuite(this.shouldRunTestSuite.bind(this));
+    jestHooks.onFileChange(this.onFileChange.bind(this));
   }
 
   shouldRunTestSuite(testPath) {

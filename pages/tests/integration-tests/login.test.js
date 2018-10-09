@@ -1,4 +1,5 @@
 import toMatchScreenshot from "../../../plugins/toMatchScreenshot";
+import Login from "../../login";
 
 // TODO: this could be abstracted even further via Jest config
 expect.extend({ toMatchScreenshot });

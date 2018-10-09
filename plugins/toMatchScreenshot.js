@@ -46,8 +46,8 @@ async function toMatchScreenshot(url) {
     actualScreenshot,
     expectedScreenshot,
     null,
-    800,
-    600
+    600,
+    400
   );
 
   const pass = mismatchPixelCount === 0;
