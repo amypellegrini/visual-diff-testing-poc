@@ -2,9 +2,10 @@ fs = require("fs");
 
 class ScreenshotDiffJestExtension {
   apply(jestHooks) {
+    console.log(this.onTestRunComplete);
     jestHooks.onTestRunComplete(this.onTestRunComplete.bind(this));
     jestHooks.shouldRunTestSuite(this.shouldRunTestSuite.bind(this));
-    jestHooks.onFileChange(this.onFileChange.bind(this));
+    //jestHooks.onFileChange(this.onFileChange.bind(this));
   }
 
   shouldRunTestSuite(testPath) {
