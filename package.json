@@ -23,7 +23,7 @@
     "next": "^7.0.1",
     "pixelmatch": "^4.0.2",
     "puppeteer": "^1.8.0",
-    "react": "^16.5.2",
+    "react": "^16.6.3",
     "react-dom": "^16.5.2"
   },
   "devDependencies": {
@@ -31,7 +31,7 @@
     "@babel/preset-react": "^7.0.0",
     "babel-jest": "^23.6.0",
     "jest": "^23.6.0",
-    "jest-puppeteer": "^3.4.0",
+    "jest-puppeteer": "^3.6.0",
     "react-test-renderer": "^16.5.2",
     "react-testing-library": "^5.1.1",
     "webpack": "^4.20.2",
