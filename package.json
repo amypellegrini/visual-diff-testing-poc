@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/amypellegrini/visual-diff-testing-poc#readme",
   "dependencies": {
-    "next": "^7.0.1",
+    "next": "^7.0.2",
     "pixelmatch": "^4.0.2",
     "puppeteer": "^1.8.0",
     "react": "^16.6.3",
