@@ -1,11 +1,11 @@
 import toMatchScreenshot from "../../../plugins/toMatchScreenshot";
-import Index from "../../index";
+import Login from "../../login";
 
 // TODO: this could be abstracted even further via Jest config
 expect.extend({ toMatchScreenshot });
 
-describe("Index/home route", () => {
+describe("Other page route", () => {
   it("should match previous screenshot", async () => {
-    await expect("http://localhost:3000").toMatchScreenshot();
+    await expect("http://localhost:3000/login").toMatchScreenshot();
   });
 });

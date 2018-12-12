@@ -1,5 +1,12 @@
 # Visual Diff Testing Proof of Concept
 
+## Test commands
+
+- **Unit tests**: `npm test`
+- **Integration tests**: `npm run integration-tests`
+
+NOTE: To see the screenshot testing example you have to run the integration tests.
+
 ## The cost visual regression testing
 
 Visual regression testing can be expensive and slow to perform because of the human element involved in the process.
