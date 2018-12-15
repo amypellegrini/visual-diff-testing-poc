@@ -60,4 +60,19 @@ A workaround for this problem could be page clipping.
 
 ### Not a silver bullet
 
-Please note that as sophisticated as this solution may be, it is still a long shot away from totally replacing **UAT** and there will always be unpredictable edge cases to consider.
+Please note that as sophisticated as this solution may be, it is not even close to replace **UAT** and there will always be unpredictable edge cases to consider.
+
+The implementation of automated visual regression testing is intended to enhance and complement the work done by testers, not to replace humans; liberated from the need to perform a cognitive repetitive chore, testers can focus more in other aspects of the interaction between users and the software product.
+
+### Integration Tests vs Unit Tests
+
+The emergence of frameworks like React, putting a strong emphasis on components and composition, enable the use of visual regression testing in both unit tests and integration tests.
+
+In this POC I intend to explore both approaches in the following manner:
+
+<dl>
+  <dt>Unit Tests:</dt>
+  <dd>The component is compiled and rendered in a browser, and a screenshot or series of screenshots, in different screen sizes, are taken for comparison.</dd>
+  <dt>Integration Tests:</dt>
+  <dd>The application is launched and a screenshot is taken out given routes that represent different states of the overall composition.</dd>
+</dl>
