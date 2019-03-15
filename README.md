@@ -1,3 +1,7 @@
+# THIS PROJECT IS NO LONGER MAINTAINED
+
+----------------------------------------------------------------------------------
+
 # Visual Diff Testing Proof of Concept
 
 ## Test commands
